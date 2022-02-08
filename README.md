@@ -2,7 +2,39 @@
 
 A template for creating custom extensions for [Bonfire](https://bonfire.cafe/)
 
-## Handy commands
+## How to use it
+- Clone the repository on your `/forks` folder
+```
+cd forks
+mkdir {your-extension-name}
+git clone https://github.com/bonfire-networks/bonfire_extension_template.git .
+```
+- Rename all the modules names to match your extension name:
+    - Find & replace Bonfire.ExtensionTemplate -> Bonfire.YourExtensionName 
+    - Find & replace bonfire_extension_template -> bonfire_your_extension_name
+- Rename the `bonfire_extension_template.exs` config file to match your extension name `bonfire_your_extension_name.exs`
+- Add paths to the router if you need it. If you add paths you will need to include the route module on [bonfire-app router module](https://github.com/bonfire-networks/bonfire-app/blob/main/lib/web/router.ex#L51) 
+- Add extension specific Fake functions
+- Add extension specific migrations
+- Add extension deps to deps.git and/or deps.hex 
+- Delete the bonfire extension template git history and initiate a new .git 
+    ```
+    rm -rf .git
+    git init    
+    ```
+- Create your empty extension repository on your preferred platform
+- Push your local changes
+    ```
+      git add .
+      git commit -m "first commit"
+      git create -M main
+      git remote add origin {your-remote-repository}
+      git push -u origin main
+    ```
+- Add the extension on your bonfire deps.path to include it in your local development
+- Add the extension on deps.git also (specifying the branch name) to allow others that do not have it in their fork to use it
+- Write a meaningful readme
+- TADA 🔥!
 
 ## Copyright and License
 
