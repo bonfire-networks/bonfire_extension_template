@@ -1,7 +1,7 @@
 defmodule Bonfire.ExtensionTemplate.Integration do
   alias Bonfire.Common.Config
   alias Bonfire.Common.Utils
-  require Logger
+  import Where
 
   def repo, do: Config.get!(:repo_module)
 
