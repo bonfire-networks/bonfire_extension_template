@@ -18,6 +18,8 @@ import_config "bonfire_extension_template.exs"
 
 config :bonfire, :repo_module, Bonfire.Repo
 
+config :phoenix, :json_library, Jason
+
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
