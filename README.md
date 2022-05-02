@@ -6,8 +6,8 @@ A template for creating custom extensions for [Bonfire](https://bonfire.cafe/)
 - Clone the repository on your `/forks` folder
 ```
 cd forks
-mkdir {your-extension-name}
-git clone https://github.com/bonfire-networks/bonfire_extension_template.git .
+git clone https://github.com/bonfire-networks/bonfire_extension_template.git {your-extension-name-here}
+cd {your-extension-name-here} 
 ```
 - Rename all the modules names to match your extension name:
     - Find & replace Bonfire.ExtensionTemplate -> Bonfire.YourExtensionName 
