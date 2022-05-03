@@ -28,4 +28,11 @@ config :mime, :types, %{
   "application/activity+json" => ["activity+json"]
 }
 
+config :bonfire_extension_template, :otp_app, :bonfire_extension_template
+config :bonfire_common, :otp_app, :bonfire_extension_template
+config :bonfire_extension_template, :repo_module, Bonfire.Repo
+config :bonfire_extension_template, ecto_repos: [Bonfire.Repo]
+config :bonfire_extension_template, :localisation_path, "priv/localisation"
+config :bonfire_data_identity, Bonfire.Data.Identity.Credential, hasher_module: Argon2
+
 # import_config "#{Mix.env()}.exs"
