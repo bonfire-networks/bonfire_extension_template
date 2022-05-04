@@ -23,7 +23,7 @@ defmodule Bonfire.ExtensionTemplate.DataCase do
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import Bonfire.ExtensionTemplate.DataCase
+      # import Bonfire.ExtensionTemplate.DataCase
     end
   end
 

@@ -26,7 +26,7 @@ defmodule Bonfire.ExtensionTemplate.ConnCase do
       import Bonfire.UI.Common.Testing.Helpers
 
       import Phoenix.LiveViewTest
-      import Bonfire.ExtensionTemplate.ConnCase
+      # import Bonfire.ExtensionTemplate.ConnCase, async: true
 
       import Bonfire.ExtensionTemplate.Test.ConnHelpers
       import Bonfire.ExtensionTemplate.Test.FakeHelpers
