@@ -11,6 +11,5 @@ defmodule Bonfire.ExtensionTemplate.RuntimeConfig do
 
     config :bonfire_extension_template,
       disabled: false
-
   end
 end

@@ -5,7 +5,7 @@ defmodule Bonfire.ExtensionTemplate.Web.Routes do
       scope "/bonfire_extension_template/", Bonfire.ExtensionTemplate.Web do
         pipe_through(:browser)
 
-        live "/", HomeLive
+        live("/", HomeLive)
       end
 
       # pages only guests can view

@@ -18,7 +18,6 @@ defmodule Bonfire.ExtensionTemplate.Web.HomeLive do
   end
 
   defp mounted(params, session, socket) do
-
     {:ok,
      assign(
        socket,
@@ -26,5 +25,4 @@ defmodule Bonfire.ExtensionTemplate.Web.HomeLive do
        page_title: "ExtensionTemplate"
      )}
   end
-
 end
