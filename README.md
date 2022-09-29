@@ -32,6 +32,7 @@ cd {your-extension-name-here}
       git push -u origin main
     ```
 - Add the extension on your bonfire deps.path to include it in your local development
+- Add `use_if_enabled(Bonfire.ExtensionTemplate.Web.Routes)` in your app's `Router` module
 - Add the extension on deps.git also (specifying the branch name) to allow others that do not have it in their fork to use it
 - Write a meaningful readme
 - TADA 🔥!

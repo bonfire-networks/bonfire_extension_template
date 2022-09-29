@@ -1,16 +1,6 @@
 import Config
 
-#### Email configuration
-
-# You will almost certainly want to change at least some of these
-
-# include Phoenix web server boilerplate
-# import_config "bonfire_web_phoenix.exs"
-
-# include all used Bonfire extensions
-import_config "bonfire_extension_template.exs"
-
-#### Basic configuration
+#### Basic configuration useful for tests, everything else should be in `Bonfire.ExtensionTemplate.RuntimeConfig`
 
 # You probably won't want to touch these. You might override some in
 # other config files.
