@@ -1,6 +1,7 @@
 defmodule Bonfire.ExtensionTemplate.RuntimeConfig do
   use Bonfire.Common.Localise
 
+  @behaviour Bonfire.Common.ConfigModule
   def config_module, do: true
 
   @doc """
