@@ -26,6 +26,13 @@ defmodule Bonfire.ExtensionTemplate.Web.HomeLive do
      )}
   end
 
+  def do_handle_event("custom_event",
+        attrs,
+        socket) do
+    # handle the event here
+    {:noreply, socket}
+  end
+
   def handle_params(params, uri, socket),
     do:
       Bonfire.UI.Common.LiveHandlers.handle_params(
