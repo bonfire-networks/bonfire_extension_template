@@ -37,6 +37,39 @@ cd {your-extension-name-here}
 - Write a meaningful readme
 - TADA 🔥!
 
+### Add your navigation
+
+> **Warning**
+> The following pattern is likely to change in the coming period.
+
+Each extension can specify it's own navbar in a quite flexible way, leveraging on 2 macro: `declare_extension` and `declare_nav_link`.
+
+
+- On your extension homepage call the `declare_extension` macro, specifying the extension name, its icon (that will be mostly used to list the extension with the other active ones) and the default_nav.
+
+```
+declare_extension(
+      "ExtensionTemplate",
+      icon: "bi:app",
+      default_nav: [
+        Bonfire.ExtensionTemplate.Web.HomeLive,
+        Bonfire.ExtensionTemplate.Web.AboutLive
+      ])
+```
+
+- The views you will include in the `default_nav` section, will be the ones that will be shown on the navigation sidebar. 
+
+- The last step is to call `declare_nav_link` on each of those view/components already specified in declare_extension. 
+
+```
+declare_nav_link(l("About"),
+    page: "About",
+    href: "/bonfire_extension_template/about",
+    icon: "typcn:info-large"
+  )
+```
+
+
 ## Copyright and License
 
 Copyright (c) 2020 Bonfire, VoxPublica, and CommonsPub Contributors
