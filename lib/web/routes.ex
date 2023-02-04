@@ -8,6 +8,7 @@ defmodule Bonfire.ExtensionTemplate.Web.Routes do
         pipe_through(:browser)
 
         live("/", HomeLive)
+        live("/about", AboutLive)
       end
 
       # pages only guests can view

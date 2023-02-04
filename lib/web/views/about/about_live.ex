@@ -1,17 +1,12 @@
-defmodule Bonfire.ExtensionTemplate.Web.HomeLive do
+defmodule Bonfire.ExtensionTemplate.Web.AboutLive do
   use Bonfire.UI.Common.Web, :surface_live_view
   alias Bonfire.UI.Me.LivePlugs
 
-  declare_extension(
-      "ExtensionTemplate",
-      icon: "bi:app",
-      default_nav: [
-        Bonfire.ExtensionTemplate.Web.HomeLive,
-        Bonfire.ExtensionTemplate.Web.AboutLive
-      ])
-
-  declare_nav_link(l("Home"), page: "home", icon: "ri:home-line")
-
+  declare_nav_link(l("About"),
+    page: "About",
+    href: "/bonfire_extension_template/about",
+    icon: "typcn:info-large"
+)
   def mount(params, session, socket) do
     live_plug(params, session, socket, [
       LivePlugs.LoadCurrentAccount,
@@ -29,8 +24,9 @@ defmodule Bonfire.ExtensionTemplate.Web.HomeLive do
     {:ok,
      assign(
        socket,
-       page: "extension_template",
-       page_title: "ExtensionTemplate"
+       page: "About",
+       page_title: "About the extension",
+       nav_items: Bonfire.Common.ExtensionModule.default_nav(:bonfire_extension_template),
      )}
   end
 
