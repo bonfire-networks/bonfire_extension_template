@@ -6,7 +6,8 @@ defmodule Bonfire.ExtensionTemplate.Web.AboutLive do
     page: "About",
     href: "/bonfire_extension_template/about",
     icon: "typcn:info-large"
-)
+  )
+
   def mount(params, session, socket) do
     live_plug(params, session, socket, [
       LivePlugs.LoadCurrentAccount,
@@ -26,7 +27,7 @@ defmodule Bonfire.ExtensionTemplate.Web.AboutLive do
        socket,
        page: "About",
        page_title: "About the extension",
-       nav_items: Bonfire.Common.ExtensionModule.default_nav(:bonfire_extension_template),
+       nav_items: Bonfire.Common.ExtensionModule.default_nav(:bonfire_extension_template)
      )}
   end
 

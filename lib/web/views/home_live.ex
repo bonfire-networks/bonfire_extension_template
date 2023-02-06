@@ -3,12 +3,13 @@ defmodule Bonfire.ExtensionTemplate.Web.HomeLive do
   alias Bonfire.UI.Me.LivePlugs
 
   declare_extension(
-      "ExtensionTemplate",
-      icon: "bi:app",
-      default_nav: [
-        Bonfire.ExtensionTemplate.Web.HomeLive,
-        Bonfire.ExtensionTemplate.Web.AboutLive
-      ])
+    "ExtensionTemplate",
+    icon: "bi:app",
+    default_nav: [
+      Bonfire.ExtensionTemplate.Web.HomeLive,
+      Bonfire.ExtensionTemplate.Web.AboutLive
+    ]
+  )
 
   declare_nav_link(l("Home"), page: "home", icon: "ri:home-line")
 
