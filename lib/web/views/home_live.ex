@@ -26,7 +26,7 @@ defmodule Bonfire.ExtensionTemplate.Web.HomeLive do
     ])
   end
 
-  defp mounted(params, session, socket) do
+  defp mounted(_params, _session, socket) do
     {:ok,
      assign(
        socket,
@@ -37,7 +37,7 @@ defmodule Bonfire.ExtensionTemplate.Web.HomeLive do
 
   def do_handle_event(
         "custom_event",
-        attrs,
+        _attrs,
         socket
       ) do
     # handle the event here
