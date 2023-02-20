@@ -27,7 +27,7 @@ cd {your-extension-name-here}
     ```
       git add .
       git commit -m "first commit"
-      git create -M main
+      git branch -M main
       git remote add origin {your-remote-repository}
       git push -u origin main
     ```
