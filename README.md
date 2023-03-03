@@ -3,7 +3,7 @@
 A template for creating custom extensions for [Bonfire](https://bonfire.cafe/)
 
 ## How to use it
-- Clone the repository on your `/forks` folder
+- Clone the repository on your `/extensions` folder
 ```
 cd extensions
 git clone https://github.com/bonfire-networks/bonfire_extension_template.git {your-extension-name-here}
