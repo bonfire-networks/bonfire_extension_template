@@ -10,7 +10,7 @@ defmodule Bonfire.ExtensionTemplate.Web.HomeLive do
     ]
   )
 
-  declare_nav_link(l("Home"), page: "home", icon: "ri:home-line")
+  declare_nav_link(l("Home"), page: "home", icon: "ri:home-line", emoji: "🧩")
 
   on_mount {LivePlugs, [Bonfire.UI.Me.LivePlugs.LoadCurrentUser]}
 
