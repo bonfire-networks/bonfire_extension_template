@@ -10,7 +10,7 @@ defmodule Bonfire.ExtensionTemplate.RuntimeConfig do
   def config do
     import Config
 
-    config :bonfire_extension_template,
-      disabled: false
+    # config :bonfire_extension_template,
+    #   modularity: :disabled
   end
 end
