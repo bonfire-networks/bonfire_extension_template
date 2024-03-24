@@ -4,6 +4,7 @@ defmodule Bonfire.ExtensionTemplate.Web.HomeLive do
   declare_extension(
     "ExtensionTemplate",
     icon: "bi:app",
+    description: l("An awesome extension"),
     default_nav: [
       Bonfire.ExtensionTemplate.Web.HomeLive,
       Bonfire.ExtensionTemplate.Web.AboutLive
