@@ -15,7 +15,7 @@ defmodule Bonfire.ExtensionTemplate.DataCase do
   """
 
   use ExUnit.CaseTemplate
-  import Bonfire.ExtensionTemplate.Integration
+  import Bonfire.ExtensionTemplate
 
   using do
     quote do

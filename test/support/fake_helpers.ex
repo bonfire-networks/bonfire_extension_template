@@ -6,7 +6,7 @@ defmodule Bonfire.ExtensionTemplate.Test.FakeHelpers do
 
   import ExUnit.Assertions
 
-  import Bonfire.ExtensionTemplate.Integration
+  import Bonfire.ExtensionTemplate
 
   import Bonfire.ExtensionTemplate.Fake
 end

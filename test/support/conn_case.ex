@@ -41,7 +41,7 @@ defmodule Bonfire.ExtensionTemplate.ConnCase do
   end
 
   setup tags do
-    import Bonfire.ExtensionTemplate.Integration
+    import Bonfire.ExtensionTemplate
 
     Bonfire.Common.Test.Interactive.setup_test_repo(tags)
 
