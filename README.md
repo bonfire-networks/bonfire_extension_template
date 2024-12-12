@@ -6,7 +6,7 @@ A template for creating custom extensions for [Bonfire](https://bonfire.cafe/)
 
 ### Automatic
 
-[Set up a Bonfire dev environment](https://docs.bonfirenetworks.org/hacking.html) and then [use the generator](https://docs.bonfirenetworks.org/create-a-new-extension.html) which will automatically do all the steps below for you.
+[Set up a Bonfire dev environment](https://docs.bonfirenetworks.org/hacking.html) and then [use the generator](https://docs.bonfirenetworks.org/create-a-new-extension.html) which will automatically run most of the steps below for you.
 
 ### Manual (deprecated)
 
