@@ -3,6 +3,13 @@
 A template for creating custom extensions for [Bonfire](https://bonfire.cafe/)
 
 ## How to use it
+
+### Automatic
+
+[Set up a Bonfire dev environment](https://docs.bonfirenetworks.org/hacking.html) and then [use the generator](https://docs.bonfirenetworks.org/create-a-new-extension.html) which will automatically do all the steps below for you.
+
+### Manual (deprecated)
+
 - Clone the repository on your `/extensions` folder
 ```
 cd extensions
@@ -72,7 +79,7 @@ declare_nav_link(l("About"),
 
 ## Copyright and License
 
-Copyright (c) 2020 Bonfire, VoxPublica, and CommonsPub Contributors
+Copyright (c) 2024 Bonfire Contributors
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
