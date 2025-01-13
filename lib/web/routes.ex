@@ -1,5 +1,5 @@
 defmodule Bonfire.ExtensionTemplate.Web.Routes do
-  def declare_routes, do: nil
+  @behaviour Bonfire.UI.Common.RoutesModule
 
   defmacro __using__(_) do
     quote do
