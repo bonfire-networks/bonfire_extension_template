@@ -5,12 +5,12 @@ defmodule Bonfire.ExtensionTemplate.RuntimeConfig do
   def config_module, do: true
 
   @doc """
-  NOTE: you can override this default config in your app's `runtime.exs`, by placing similarly-named config keys below the `Bonfire.Common.Config.LoadExtensionsConfig.load_configs()` line
+  Sets runtime configuration for the extension (typically by reading ENV variables).
   """
   def config do
     import Config
 
     # config :bonfire_extension_template,
-    #   modularity: :disabled
+    #   modularity: System.get_env("ENABLE_bonfire_extension_template") || :disabled
   end
 end

@@ -24,16 +24,9 @@ defmodule Bonfire.ExtensionTemplate.ConnCase do
       import Phoenix.ConnTest
 
       import Bonfire.UI.Common.Testing.Helpers
-
       import Phoenix.LiveViewTest
-      # import Bonfire.ExtensionTemplate.ConnCase, async: true
 
-      import Bonfire.ExtensionTemplate.Test.ConnHelpers
-      import Bonfire.ExtensionTemplate.Test.FakeHelpers
-
-      alias Bonfire.ExtensionTemplate.Fake
-      import Bonfire.ExtensionTemplate.Fake
-      # alias Bonfire.ExtensionTemplate.Web.Router.Helpers, as: Routes
+      # import Bonfire.ExtensionTemplate.Fake
 
       # The default endpoint for testing
       @endpoint Application.compile_env!(:bonfire, :endpoint_module)
