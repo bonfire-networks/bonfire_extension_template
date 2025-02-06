@@ -23,11 +23,27 @@ defmodule Bonfire.ExtensionTemplate.MixProject do
       compilers: Mix.compilers() ++ [:surface],
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
+      description: "An extension for Bonfire",
+        homepage_url: "https://bonfirenetworks.org/",
+        source_url: "https://github.com/bonfire-networks/bonfire_extension_template",
+        package: [
+          licenses: ["AGPL-3.0"],
+          links: %{
+            "Repository" => "https://github.com/bonfire-networks/bonfire_extension_template",
+            "Hexdocs" => "https://hexdocs.pm/bonfire_extension_template"
+          }
+        ],
+        docs: [
+          # The first page to display from the docs
+          main: "readme",
+          # extra pages to include
+          extras: ["README.md"]
+        ],
       deps:
         Mess.deps([
           {:phoenix_live_reload, "~> 1.2", only: :dev},
-
-          {:floki, ">= 0.0.0", only: [:dev, :test]}
+          {:floki, ">= 0.0.0", only: [:dev, :test]},
+          {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
         ])
     ]
   end

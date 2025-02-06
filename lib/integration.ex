@@ -7,7 +7,7 @@ defmodule Bonfire.ExtensionTemplate do
   import Bonfire.Common.Modularity.DeclareHelpers
 
   declare_extension(
-    "ExtensionTemplate",
+    "Bonfire.ExtensionTemplate",
     icon: "bi:app",
     description: l("An awesome extension")
     # default_nav: [
