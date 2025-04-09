@@ -23,6 +23,8 @@ defmodule Bonfire.ExtensionTemplate.DataCase do
       import Ecto.Changeset
       import Ecto.Query
       # import Bonfire.ExtensionTemplate.DataCase
+
+      @moduletag :backend
     end
   end
 
